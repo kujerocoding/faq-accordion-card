@@ -40,7 +40,7 @@ body {
 .img__container {
     min-width: 250px;
     min-height: 200px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     position: relative;
     top: -7rem;
 }
@@ -48,4 +48,14 @@ body {
 .img__container > * {
     width: 100%;
     position: absolute;
+}
+
+.img--box {
+    max-width: 100px;
+    top: 4.5rem;
+    left: -.5rem;
+}
+
+.img--bg {
+    top: 110px;
 }
