@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --FF: 'Kumbh Sans', sans-serif;
+    --FS: 12px;
+    --DESATURATEDBLUETEXTCOLOR: hsl(238, 29%, 16%);
+    --SOFTREDTEXTCOLOR: hsl(14, 88%, 65%);
+    --GRAYISHBLUETEXTCOLOR: hsl(240, 6%, 50%);
+    --DARKGRAYISHBLUETEXTCOLOR: hsl(237, 12%, 33%);
+    --SOFTVIOLETGRADIENTCOLOR: hsl(273, 75%, 66%);
+    --SOFTBLUEGRADIENTCOLOR: hsl(240, 73%, 65%);
+    --LIGHTBLUEDIVIDERCOLOR: hsl(240, 5%, 91%);
+}
