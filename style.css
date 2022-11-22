@@ -87,9 +87,19 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .faq__answer {
     display: none;
+}
+
+.faq__list--btn:hover{
+    color: var(--SOFTREDTEXTCOLOR);
+}
+
+.faq__list--btn:active, .faq__list--btn:focus  {
+    color: black;
+    font-weight: bolder;
 }
 
