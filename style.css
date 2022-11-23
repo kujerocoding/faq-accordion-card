@@ -90,11 +90,11 @@ body {
     cursor: pointer;
 }
 
-.faq__answer--active {
+.faq__answer--open {
     display: block;
 }
 
-.faq__answer {
+.faq__answer--close {
     display: none;
 }
 
