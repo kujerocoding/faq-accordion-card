@@ -3,7 +3,7 @@ const faqAnswers = document.querySelectorAll('.faq__answer');
 
 function resetList () {
     for (const faqAnswer of faqAnswers) {
-    faqAnswer.classList.add('faq__answer');
+    faqAnswer.classList.add('faq__answer--close');
     }
 }
 
@@ -11,10 +11,7 @@ function resetList () {
 for (let i = 0; i < listBtns.length; i++) {
     listBtns[i].addEventListener('click', function () {
     resetList();
-    faqAnswers[i].classList.remove('faq__answer');
+    faqAnswers[i].classList.remove('faq__answer--close');
     
-    
-
-
     }/* .bind(null, i) */);
 }
