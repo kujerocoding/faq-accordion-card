@@ -98,6 +98,10 @@ body {
     display: none;
 }
 
+.btn__arrow--active {
+    transform: rotate(180deg);
+}
+
 
 
 .faq__list--btn:hover{
