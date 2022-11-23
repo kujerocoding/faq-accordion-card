@@ -90,9 +90,15 @@ body {
     cursor: pointer;
 }
 
-.faq__answer {
+.faq__answer--active {
+    display: block;
+}
+
+.faq__answer--close {
     display: none;
 }
+
+
 
 .faq__list--btn:hover{
     color: var(--SOFTREDTEXTCOLOR);
