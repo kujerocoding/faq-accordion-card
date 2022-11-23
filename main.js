@@ -1,10 +1,20 @@
-const listBtn = document.querySelector('.faq__list--btn');
-const arrowBtn = document.querySelector('.btn__arrow');
-const faqAnswer = document.querySelector('.faq__answer');
+const listBtns = document.querySelectorAll('.faq__list--btn');
+const faqAnswers = document.querySelectorAll('.faq__answer');
 
-function showAnswer() {
-    faqAnswer.style.display = "block";
-    arrowBtn.style.transform = "rotate(180deg)";
+function resetList () {
+    for (const faqAnswer of faqAnswers) {
+    faqAnswer.classList.add('faq__answer');
+    }
 }
 
-listBtn.addEventListener('click', showAnswer);
+
+for (let i = 0; i < listBtns.length; i++) {
+    listBtns[i].addEventListener('click', function () {
+    resetList();
+    faqAnswers[i].classList.remove('faq__answer');
+    
+    
+
+
+    }/* .bind(null, i) */);
+}
