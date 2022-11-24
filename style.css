@@ -52,14 +52,12 @@ body {
     position: absolute;
 }
 
-.img--box {
-    max-width: 100px;
-    top: 4.5rem;
-    left: -.5rem;
+.img--bg--1 {
+    top: 110px;
 }
 
-.img--bg {
-    top: 110px;
+.img--logo--2, .img--bg--2, .img--box {
+    display: none;
 }
 
 .faq__lists {
@@ -102,8 +100,6 @@ body {
     transform: rotate(180deg);
 }
 
-
-
 .faq__list--btn:hover{
     color: var(--SOFTREDTEXTCOLOR);
 }
@@ -111,4 +107,65 @@ body {
 .faq__list--btn:active, .faq__list--btn:focus  {
     color: black;
     font-weight: bolder;
+}
+
+@media (min-width: 45em) {
+    .main__container {
+        min-width: 700px;
+        min-height: 350px;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+        /* overflow: hidden; */
+    }
+
+    .faq__lists h2 {
+       text-align: left;
+    }
+
+    .faq__lists {
+        margin-top: 0rem;
+        padding-block: 3rem;
+        min-width: 280px;
+    }
+
+    .img__container {
+        min-width: 350px;
+        min-height: 400px;
+        border: 1px solid black;
+        top: 2rem;
+        left: -1.5rem;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .img--bg--1, .img--logo--1 {
+        display: none;
+    }
+
+    .img--bg--2 {
+        display: block;
+/*         max-width: 600px;
+        height: 500px; */
+        outline: 1px solid red;
+        position: absolute;
+        transform: scale(60%);
+        left: -30rem; 
+    }
+
+    .img--logo--2 {
+        display: block;
+        width: 100%;
+        left: -4rem;
+        top: 3rem;
+    }
+
+    .img--box {
+        display: block;
+        transform: scale(70%);
+        left: -5rem;
+        position: absolute;
+    }
+    
 }
